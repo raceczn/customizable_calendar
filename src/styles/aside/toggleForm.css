@@ -1,10 +1,10 @@
 .toggle-form {
   position: fixed;
   display: flex;
-  left: 9px;
-  top: 68px;
-  width: 44px;
-  height: 44px;
+  right: 20px;       /* lower right corner */
+  bottom: 20px;
+  width: 64px;       /* increased size */
+  height: 64px;
   background-color: transparent;
   border-radius: 50%;
   justify-content: center;
@@ -16,6 +16,7 @@
     rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
   transition: opacity 200ms ease-in-out;
 }
+
 
 .toggle-form:focus-visible {
   outline: none;
@@ -43,14 +44,13 @@
   border-radius: 50%;
 }
 
+
 .toggle-form svg {
-  height: 36px;
-  width: 36px;
+  height: 48px;      /* increased icon size */
+  width: 48px;
   pointer-events: none;
   vertical-align: middle;
   overflow: hidden;
-
-  /* transition: all 200ms ease-in-out; */
 }
 
 .toggle-form-title {
@@ -81,9 +81,10 @@
   z-index: -1 !important;
 }
 
+/* Ensure it's always visible on small screens */
 @media screen and (max-width: 530px) {
   .toggle-form {
-    display: none;
+    display: flex;   /* override display: none */
   }
 }
 
