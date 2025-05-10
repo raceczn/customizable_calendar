@@ -21,7 +21,7 @@ const form = document.querySelector(".entries__form");
 
 const datepicker = document.querySelector(".datepicker");
 const datepickeroverlay = document.querySelector(".datepicker-overlay");
-// const btntoday = document.querySelector('.btn-today');
+const btntoday = document.querySelector(".btn-today");
 const prevnext = document.querySelector(".prev-next");
 const dateTimeBtn = document.querySelector(".datetime-content");
 
@@ -45,7 +45,7 @@ const monthwrapper = document.querySelector(".monthview");
 const listviewBody = document.querySelector(".listview__body");
 
 const collapsebtn = document.querySelector(".collapse-view");
-
+const dateTimeIcon = document.querySelector(".datetime-icon");
 // const dynamicImport = {
 //   form: () => import('../components/forms/entryForm').then((module) => module.default),
 // }
@@ -216,7 +216,8 @@ export default function renderViews(context, datepickerContext, store) {
     // }
 
     if (currentSidebarState === "hide") {
-      // When closing sidebar (code remains the same)
+      // When closing sidebar (show the icon)
+      dateTimeBtn.classList.remove("hide-datetime-icon");
       toggleForm.onclick = handleForm;
       sbToggleForm.onclick = null;
       sbToggleSubBtn.onclick = null;
@@ -231,7 +232,8 @@ export default function renderViews(context, datepickerContext, store) {
       sidebar.classList.add("hide-sidebar");
       toggleForm.classList.remove("hide-toggle--form");
     } else {
-      // When opening sidebar - REMOVED the lines that disable prev/next buttons
+      // When opening sidebar (hide the icon)
+      dateTimeBtn.classList.add("hide-datetime-icon");
       toggleForm.onclick = null;
       sbToggleForm.onclick = handleForm;
       sbToggleSubBtn.onclick = handleToggleSubmenu;
@@ -244,12 +246,6 @@ export default function renderViews(context, datepickerContext, store) {
       viewsContainer.classList.add("container__calendars-sb-active");
       sidebar.classList.remove("hide-sidebar");
       toggleForm.classList.add("hide-toggle--form");
-
-      // Remove these lines that were disabling the buttons:
-      // prevnext.classList.add('prevnext-inactive');
-      // dateTimeBtn.classList.add('prevnext-inactive');
-      // prevnext.setAttribute('tabindex', '-1');
-      // dateTimeBtn.setAttribute('tabindex', '-1');
 
       const resetdatepicker = store.getResetDatepickerCallback();
       if (resetdatepicker !== null) {
@@ -268,14 +264,24 @@ export default function renderViews(context, datepickerContext, store) {
       renderSidebarDatepicker();
     }
   }
-  
+
   function handleBtnToday() {
-    const comp = context.getComponent();
-    if (!context.isToday() && comp !== "list") {
-      context.setDateFromDateObj(new Date());
-      fullRender(comp);
-      renderSidebarDatepicker();
+    // Always switch to day view when Today is clicked
+    if (context.getComponent() !== "day") {
+      context.setComponent("day");
     }
+
+    // Set date to today if not already there
+    if (!context.isToday()) {
+      context.setDateFromDateObj(new Date());
+    }
+
+    // Render the day view
+    fullRender("day");
+    renderSidebarDatepicker();
+
+    // Update URL hash
+    window.location.hash = "day";
   }
 
   function handleBtnNavigation(direction) {
@@ -313,6 +319,11 @@ export default function renderViews(context, datepickerContext, store) {
   }
 
   function handleDatePickerBtn(e) {
+    // Don't show datepicker if sidebar is open
+    if (!sidebar.classList.contains("hide-sidebar")) {
+      return;
+    }
+
     datepicker.classList.remove("hide-datepicker");
     datepickeroverlay.classList.remove("hide-datepicker-overlay");
     datepickerContext.setDateFromDateObj(context.getDate());
@@ -398,12 +409,18 @@ export default function renderViews(context, datepickerContext, store) {
     }
 
     if (dateTime) {
-      handleDatePickerBtn(e);
+      // Only allow datepicker if sidebar is closed
+      if (sidebar.classList.contains("hide-sidebar")) {
+        handleDatePickerBtn(e);
+      }
       return;
     }
 
     if (search) {
-      createGoTo(context, store, datepickerContext);
+      // Only allow search if sidebar is closed
+      if (sidebar.classList.contains("hide-sidebar")) {
+        createGoTo(context, store, datepickerContext);
+      }
       return;
     }
 
@@ -417,7 +434,6 @@ export default function renderViews(context, datepickerContext, store) {
       return;
     }
   }
-
   function delegateGlobalKeyDown(e) {
     const toggleChangeview = (e) => {
       if (selectElement.classList.contains("selection--active")) {
@@ -530,6 +546,10 @@ export default function renderViews(context, datepickerContext, store) {
 
       // opens search modal
       case "g": {
+        // Don't allow search/go to when sidebar is open
+        if (!sidebar.classList.contains("hide-sidebar")) {
+          break;
+        }
         createGoTo(context, store, datepickerContext);
         break;
       }
