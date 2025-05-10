@@ -240,13 +240,13 @@
 }
 
 .delete-popup__confirm {
-  color: var(--white3);
-  background-color: var(--black2);
+  color: white;
+  background-color: rgb(222, 107, 107);
   margin-left: 12px;
 }
 
 .delete-popup__confirm:hover {
-  background-color: var(--darkgrey1);
+  background-color: rgb(228, 54, 54);
   color: var(--taskcolor0);
 }
 

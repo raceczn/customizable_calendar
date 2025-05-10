@@ -20,51 +20,43 @@
     <div class="h__container">
 
       <div class="h-col-1">
-
         <button class="menu" data-tooltip="Main menu" aria-label="button" role="button">
-          <svg focusable="false" style="pointer-events:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="var(--white2)">
+          <svg focusable="false" style="pointer-events:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24px" height="24px" fill="var(--white2)">
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
           </svg>
         </button>
 
-        <div class="logo" data-current-day-of-month="4">
-          <svg height="36" viewBox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" fill-rule="evenodd">
-              <path d="m0 0h36v36h-36z" />
-              <g fill-rule="nonzero" transform="translate(3.75 3.75)">
-                <path d="m21.75 6.75-6.75-.75-8.25.75-.75 7.5.75 7.5 7.5.9375 7.5-.9375.75-7.6875z" fill="#fff" />
-                <path d="m21.75 28.5 6.75-6.75-3.375-1.5-3.375 1.5-1.5 3.375z" fill="#ea4335" />
-                <path d="m5.25 25.125 1.5 3.375h15v-6.75h-15z" fill="#34a853" />
-                <path
-                  d="m2.25 0c-1.243125 0-2.25 1.006875-2.25 2.25v19.5l3.375 1.5 3.375-1.5v-15h15l1.5-3.375-1.5-3.375z"
-                  fill="#4285f4" />
-                <path d="m0 21.75v4.5c0 1.243125 1.006875 2.25 2.25 2.25h4.5v-6.75z" fill="#188038" />
-                <path d="m21.75 6.75v15h6.75v-15l-3.375-1.5z" fill="#fbbc04" />
-                <path d="m28.5 6.75v-4.5c0-1.243125-1.006875-2.25-2.25-2.25h-4.5v6.75z" fill="#1967d2" />
-              </g>
-            </g>
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M8 7V3m8 4V3m-9 8h10M5.25 6.75A2.25 2.25 0 0 1 7.5 4.5h9a2.25 2.25 0 0 1 2.25 2.25v12A2.25 2.25 0 0 1 16.5 21H7.5a2.25 2.25 0 0 1-2.25-2.25v-12Z" />
           </svg>
         </div>
+
 
         <h3 class="header-title">Calendar</h3>
 
         <button class="btn-root btn-today" style="cursor:pointer;" aria-label="button" role="button">Today</button>
-
       </div>
+
 
       <div class="group-right">
 
         <div class="h-col-2">
           <div class="prev-next">
             <button class="prev" aria-label="button" role="button">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white2)">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                fill="var(--white2)">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
               </svg>
             </button>
             <button class="next" aria-label="button" role="button">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white2)">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                fill="var(--white2)">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M8.59 16.59L10 18l6-6-6-6L8.59 7.41 13.17 12z" />
               </svg>
@@ -119,12 +111,10 @@
       <div class="sidebar-content--header">
         <button class="sb-toggle-form-btn" aria-label="button" role="button">
           <span class="stfb">
-            <svg width="36" height="36" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
+            <!-- Modern minimal plus icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 5c.55 0 1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1z" />
             </svg>
           </span>
           <span class="sb-toggle-form-btn__content">
@@ -132,8 +122,6 @@
           </span>
         </button>
 
-        <!-- <div class="sb-icon-toggles">
-        </div> -->
         <button class="sb-data-btn" aria-label="button" role="button">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white2)">
             <path
@@ -141,6 +129,7 @@
           </svg>
         </button>
       </div>
+
 
       <!-- sidebar content (datepicker/categories) -->
       <div class="sidebar-content__wrapper">
@@ -153,13 +142,15 @@
               <button class="sbdatepicker-title" aria-label="button" role="button">October 2024</button>
               <div class="sbdatepicker-nav">
                 <button class="sbdatepicker-nav--prev" aria-label="button" role="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)" style="user-select:none; pointer-events:none">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                    fill="var(--white3)" style="user-select:none; pointer-events:none">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
                   </svg>
                 </button>
                 <button class="sbdatepicker-nav--next" aria-label="button" role="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)" style="user-select:none; pointer-events:none">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                    fill="var(--white3)" style="user-select:none; pointer-events:none">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M8.59 16.59L10 18l6-6-6-6L8.59 7.41 13.17 12z"></path>
                   </svg>
@@ -185,7 +176,8 @@
 
             <aside class="sb-datepicker-change-date hide-sbdpcd">
               <aside class="sb-close-change-date">
-                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white3)">
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px"
+                  fill="var(--white3)">
                   <path d="M0 0h24v24H0z" fill="none" />
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
@@ -194,14 +186,16 @@
 
               <div class="sb-yearpicker">
                 <div class="sb-yearpicker-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white4)">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px"
+                    fill="var(--white4)">
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                   </svg>
                 </div>
-                <div class="sb-yearpicker-title">2024</div>
+                <div class="sb-yearpicker-title"></div>
                 <div class="sb-yearpicker-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white4)">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px"
+                    fill="var(--white4)">
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                   </svg>
@@ -239,7 +233,8 @@
             </div>
 
             <div class="sbch-plus">
-              <svg xmlns="http://www.w3.sorg/2000/svg" height="24" width="24" fill="var(--white2)" style="pointer-events:none">
+              <svg xmlns="http://www.w3.sorg/2000/svg" height="24" width="24" fill="var(--white2)"
+                style="pointer-events:none">
                 <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z" />
               </svg>
             </div>
@@ -260,11 +255,11 @@
             <div class="sbt-divide">
             </div>
             <div class="sb__privacy">
-              <span>All Rights Reserved</span>
+              <!-- <span>All Rights Reserved</span> -->
             </div>
             <div class="sbt-divide">
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -341,7 +336,16 @@
 
         <div class="weekview__grid">
           <!-- <div class="weekview--sidebar"></div> -->
-          <div class="weekview--sidebar"><span class="sidegrid-cell"> </span><span class="sidegrid-cell">1 AM</span><span class="sidegrid-cell">2 AM</span><span class="sidegrid-cell">3 AM</span><span class="sidegrid-cell">4 AM</span><span class="sidegrid-cell">5 AM</span><span class="sidegrid-cell">6 AM</span><span class="sidegrid-cell">7 AM</span><span class="sidegrid-cell">8 AM</span><span class="sidegrid-cell">9 AM</span><span class="sidegrid-cell">10 AM</span><span class="sidegrid-cell">11 AM</span><span class="sidegrid-cell">12 PM</span><span class="sidegrid-cell">1 PM</span><span class="sidegrid-cell">2 PM</span><span class="sidegrid-cell">3 PM</span><span class="sidegrid-cell">4 PM</span><span class="sidegrid-cell">5 PM</span><span class="sidegrid-cell">6 PM</span><span class="sidegrid-cell">7 PM</span><span class="sidegrid-cell">8 PM</span><span class="sidegrid-cell">9 PM</span><span class="sidegrid-cell">10 PM</span><span class="sidegrid-cell">11 PM</span></div>
+          <div class="weekview--sidebar"><span class="sidegrid-cell"> </span><span class="sidegrid-cell">1
+              AM</span><span class="sidegrid-cell">2 AM</span><span class="sidegrid-cell">3 AM</span><span
+              class="sidegrid-cell">4 AM</span><span class="sidegrid-cell">5 AM</span><span class="sidegrid-cell">6
+              AM</span><span class="sidegrid-cell">7 AM</span><span class="sidegrid-cell">8 AM</span><span
+              class="sidegrid-cell">9 AM</span><span class="sidegrid-cell">10 AM</span><span class="sidegrid-cell">11
+              AM</span><span class="sidegrid-cell">12 PM</span><span class="sidegrid-cell">1 PM</span><span
+              class="sidegrid-cell">2 PM</span><span class="sidegrid-cell">3 PM</span><span class="sidegrid-cell">4
+              PM</span><span class="sidegrid-cell">5 PM</span><span class="sidegrid-cell">6 PM</span><span
+              class="sidegrid-cell">7 PM</span><span class="sidegrid-cell">8 PM</span><span class="sidegrid-cell">9
+              PM</span><span class="sidegrid-cell">10 PM</span><span class="sidegrid-cell">11 PM</span></div>
 
           <div class="weekview--calendar">
             <div class="week--col" data-column-index="0" data-wv-top="false"></div>
@@ -382,7 +386,19 @@
           <div class="dayview__grid">
             <div class="dayview__grid--wrapper">
               <div class="dayview--side-grid__wrapper">
-                <div class="dayview--side-grid"><span class="dv-sidegrid--cell"> </span><span class="dv-sidegrid--cell">1 AM</span><span class="dv-sidegrid--cell">2 AM</span><span class="dv-sidegrid--cell">3 AM</span><span class="dv-sidegrid--cell">4 AM</span><span class="dv-sidegrid--cell">5 AM</span><span class="dv-sidegrid--cell">6 AM</span><span class="dv-sidegrid--cell">7 AM</span><span class="dv-sidegrid--cell">8 AM</span><span class="dv-sidegrid--cell">9 AM</span><span class="dv-sidegrid--cell">10 AM</span><span class="dv-sidegrid--cell">11 AM</span><span class="dv-sidegrid--cell">12 PM</span><span class="dv-sidegrid--cell">1 PM</span><span class="dv-sidegrid--cell">2 PM</span><span class="dv-sidegrid--cell">3 PM</span><span class="dv-sidegrid--cell">4 PM</span><span class="dv-sidegrid--cell">5 PM</span><span class="dv-sidegrid--cell">6 PM</span><span class="dv-sidegrid--cell">7 PM</span><span class="dv-sidegrid--cell">8 PM</span><span class="dv-sidegrid--cell">9 PM</span><span class="dv-sidegrid--cell">10 PM</span><span class="dv-sidegrid--cell">11 PM</span></div>
+                <div class="dayview--side-grid"><span class="dv-sidegrid--cell"> </span><span
+                    class="dv-sidegrid--cell">1 AM</span><span class="dv-sidegrid--cell">2 AM</span><span
+                    class="dv-sidegrid--cell">3 AM</span><span class="dv-sidegrid--cell">4 AM</span><span
+                    class="dv-sidegrid--cell">5 AM</span><span class="dv-sidegrid--cell">6 AM</span><span
+                    class="dv-sidegrid--cell">7 AM</span><span class="dv-sidegrid--cell">8 AM</span><span
+                    class="dv-sidegrid--cell">9 AM</span><span class="dv-sidegrid--cell">10 AM</span><span
+                    class="dv-sidegrid--cell">11 AM</span><span class="dv-sidegrid--cell">12 PM</span><span
+                    class="dv-sidegrid--cell">1 PM</span><span class="dv-sidegrid--cell">2 PM</span><span
+                    class="dv-sidegrid--cell">3 PM</span><span class="dv-sidegrid--cell">4 PM</span><span
+                    class="dv-sidegrid--cell">5 PM</span><span class="dv-sidegrid--cell">6 PM</span><span
+                    class="dv-sidegrid--cell">7 PM</span><span class="dv-sidegrid--cell">8 PM</span><span
+                    class="dv-sidegrid--cell">9 PM</span><span class="dv-sidegrid--cell">10 PM</span><span
+                    class="dv-sidegrid--cell">11 PM</span></div>
                 <!-- <div class="dayview--side-grid"></div> -->
               </div>
 
@@ -403,14 +419,22 @@
             <span>
               <input class="lv-view-input" id="lv-view-tasks" name="lv-view-radio" type="radio" value="tasks" checked>
               <label class="lv-view-label" for="lv-view-tasks" title="switch to tasks" aria-label="switch to tasks">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
+                </svg>
               </label>
             </span>
 
             <span>
               <input class="lv-view-input" id="lv-view-calendar" name="lv-view-radio" type="radio" value="calendar">
               <label class="lv-view-label" for="lv-view-calendar" title="switch to tasks" aria-label="switch to tasks">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-400q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm160 0q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm160 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="M320-400q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm160 0q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm160 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                </svg>
               </label>
             </span>
           </div>
@@ -443,13 +467,15 @@
       <button class="datepicker-title" role="button" aria-label="button">October 2024</button>
       <div class="datepicker-nav">
         <button class="datepicker-nav--prev" role="button" aria-label="button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)" style="user-select:none; pointer-events:none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)"
+            style="user-select:none; pointer-events:none">
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
           </svg>
         </button>
         <button class="datepicker-nav--next" role="button" aria-label="button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)" style="user-select:none; pointer-events:none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--white3)"
+            style="user-select:none; pointer-events:none">
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M8.59 16.59L10 18l6-6-6-6L8.59 7.41 13.17 12z"></path>
           </svg>
@@ -512,7 +538,8 @@
   </aside>
 
   <!-- MAIN APP FORM -->
-  <aside class="entries__form hide-form" style="top:0;left:0;bottom:0;right:0;margin:auto;max-width: 450px;" data-has-css="false">
+  <aside class="entries__form hide-form" style="top:0;left:0;bottom:0;right:0;margin:auto;max-width: 450px;"
+    data-has-css="false">
     <aside class="form-modal-overlay hide-form-overlay"></aside>
 
     <div class="entries__form--header">
@@ -529,17 +556,20 @@
       <div class="entries__form--body">
         <!-- row 1: title -->
         <div class="form--body__title form-body-single">
-          <input type="text" placeholder="Add title" class="form--body__title-input" id="formBodyTitleInput" maxlength="50" spellcheck="false" required>
+          <input type="text" placeholder="Add title" class="form--body__title-input" id="formBodyTitleInput"
+            maxlength="50" spellcheck="false" required>
         </div>
 
         <div class="form--body__description form-body-single">
-          <textarea placeholder="Add description" class="form--body__description-input" maxLength="200" spellcheck="false" id="formBodyDescrtiptionTextarea"></textarea>
+          <textarea placeholder="Add description" class="form--body__description-input" maxLength="200"
+            spellcheck="false" id="formBodyDescrtiptionTextarea"></textarea>
         </div>
 
         <!-- row 2: start date & time -->
         <div class="form--body__start form-body-double">
           <div class="form--body__start-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)" class="form--body-svg__start">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)"
+              class="form--body-svg__start">
               <path
                 d="m15.3 16.7 1.4-1.4-3.7-3.7V7h-2v5.4ZM12 22q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-10Zm0 8q3.325 0 5.663-2.337Q20 15.325 20 12t-2.337-5.663Q15.325 4 12 4T6.338 6.337Q4 8.675 4 12t2.338 5.663Q8.675 20 12 20Z" />
             </svg>
@@ -559,7 +589,8 @@
         <!-- row 3: end date & time -->
         <div class="form--body__end form-body-double">
           <div class="form--body__end-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)" class="form--body-svg__end">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)"
+              class="form--body-svg__end">
               <path
                 d="m15.3 16.7 1.4-1.4-3.7-3.7V7h-2v5.4ZM12 22q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-10Zm0 8q3.325 0 5.663-2.337Q20 15.325 20 12t-2.337-5.663Q15.325 4 12 4T6.338 6.337Q4 8.675 4 12t2.338 5.663Q8.675 20 12 20Z" />
             </svg>
@@ -586,7 +617,8 @@
             </svg>
           </div>
           <div class="form--body__category-inputs">
-            <aside class="close-options-floating__btn" style="z-index:-1;user-select:none;pointer-events:none;opacity:0;box-shadow:none;">
+            <aside class="close-options-floating__btn"
+              style="z-index:-1;user-select:none;pointer-events:none;opacity:0;box-shadow:none;">
               <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="var(--white3)">
                 <path
                   d="M6.062 15 5 13.938 8.938 10 5 6.062 6.062 5 10 8.938 13.938 5 15 6.062 11.062 10 15 13.938 13.938 15 10 11.062Z" />
@@ -629,13 +661,11 @@
   <!-- floating toggle form button visible when sidebar is closed -->
   <aside class="toggle-form">
     <span class="toggle-form-btn" role="button" aria-label="open form">
-      <svg width="36" height="36" viewBox="0 0 36 36">
-        <path fill="#34A853" d="M16 16v14h4V20z"></path>
-        <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-        <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-        <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-        <path fill="none" d="M0 0h36v36H0z"></path>
-      </svg>
+      <!-- Modern minimal plus icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 5c.55 0 1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1z" />
+            </svg>
     </span>
   </aside>
 
@@ -644,7 +674,8 @@
     <div class="category__form--body">
       <div class="ctg-input--err hide-ctg-err"></div>
 
-      <input type="text" class="category__form-input" placeholder="Category Name" maxlength="20" minlength="1" id="ctgFormInput" required>
+      <input type="text" class="category__form-input" placeholder="Category Name" maxlength="20" minlength="1"
+        id="ctgFormInput" required>
       <div class="color__picker">
         <div class="color-picker__options"></div>
       </div>
@@ -658,12 +689,14 @@
 
   <!-- "eye" icon that appears in day/week view -->
   <aside class="collapse-view hide-cbt">
-    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white3)" class="cv-svg-off">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white3)"
+      class="cv-svg-off">
       <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none" />
       <path
         d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z" />
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white3)" class="cv-svg-on hide-cbt">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="var(--white3)"
+      class="cv-svg-on hide-cbt">
       <path d="M0 0h24v24H0z" fill="none" />
       <path
         d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -695,18 +728,20 @@
     <div class="sub-menu__header">
 
       <div class="sub-menu--title">
-        Settings & Data
+        Settings
       </div>
 
       <div class="sub-menu--icons">
         <div class="toggle-animations-icon__sm" data-tooltip="Animations Enabled">
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--primary2)" class="tai-on">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+            width="24px" fill="var(--primary2)" class="tai-on">
             <rect fill="none" height="24" width="24" />
             <path
               d="M2.88,7.88l1.54,1.54C4.15,10.23,4,11.1,4,12c0,4.41,3.59,8,8,8s8-3.59,8-8s-3.59-8-8-8c-0.9,0-1.77,0.15-2.58,0.42 L7.89,2.89C9.15,2.32,10.54,2,12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12C2,10.53,2.32,9.14,2.88,7.88z M7,5.5 C7,6.33,6.33,7,5.5,7S4,6.33,4,5.5S4.67,4,5.5,4S7,4.67,7,5.5z" />
           </svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="var(--red1)" class="tai-off hide-tai">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+            width="24px" fill="var(--red1)" class="tai-off hide-tai">
             <g>
               <rect fill="none" height="24" width="24" />
               <path
@@ -734,54 +769,7 @@
 
       <div class="sub-menu-content">
 
-        <!-- row one -->
-        <div class="sub-menu--item">
-          <div class="sub-menu--item__title">
-            Calendar Data (JSON)
-            <hr>
-            <strong>
-              (Download & Upload)
-            </strong>
-          </div>
-          <!-- .sub-menu--item__description >strong -->
-          <div class="sub-menu--item__description sbmid-row-one">
-            Uploading data will overwrite existing data!
-            <br>
-            Please ensure you have a backup of your data
-            before uploading.
-            <br>
-            Uploading unsupported data will not cause any overwrites.
-          </div>
-
-          <div class="sub-menu--item__actions">
-            <div class="sm-download-json">
-              <div class="sm-json-btn down-json">
-                <div class="sm-download-json-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)">
-                    <path
-                      d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413Q18.825 20 18 20Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11Z" />
-                  </svg>
-                </div>
-                <div class="sm-download-json-title">
-                  download.json
-                </div>
-              </div>
-              <div class="sm-json-btn upload-json">
-                <div class="sm-upload-json-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="var(--white3)">
-                    <path
-                      d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413Q18.825 20 18 20Zm5-4V7.85l-2.6 2.6L7 9l5-5 5 5-1.4 1.45-2.6-2.6V16Z" />
-                  </svg>
-                </div>
-                <div class="sm-upload-json-title">
-                  upload.json
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- row two -->
+        <!-- row -->
         <div class="sub-menu--item smi-theme-actions">
           <div class="sub-menu--item__title">Configure Application Theme</div>
           <div class="sub-menu--item__description">
@@ -789,7 +777,8 @@
           </div>
           <div class="sub-menu--item__actions theme-actions">
             <div class="theme-option theme-option-dark">
-              <input class="theme-radio__input" name="themeoption" type="radio" value="dark" id="themeRadioDarkInput" checked>
+              <input class="theme-radio__input" name="themeoption" type="radio" value="dark" id="themeRadioDarkInput"
+                checked>
               <span>Dark</span>
             </div>
             <div class="theme-option theme-option-light">
@@ -797,7 +786,8 @@
               <span>Light</span>
             </div>
             <div class="theme-option theme-option-contrast">
-              <input class="theme-radio__input" name="themeoption" type="radio" value="contrast" id="themeRadioContrastInput">
+              <input class="theme-radio__input" name="themeoption" type="radio" value="contrast"
+                id="themeRadioContrastInput">
               <span>High Contrast</span>
             </div>
           </div>
@@ -930,7 +920,8 @@
         </div>
         <div class="entry-option-desc">
           <div class="eob-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" class="eob-category--icon" fill="var(--primarylight1)">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" class="eob-category--icon"
+              fill="var(--primarylight1)">
               <path
                 d="M10 18q-1.646 0-3.104-.625-1.458-.625-2.552-1.719t-1.719-2.552Q2 11.646 2 10q0-1.667.625-3.115.625-1.447 1.719-2.541Q5.438 3.25 6.896 2.625T10 2q1.667 0 3.115.625 1.447.625 2.541 1.719 1.094 1.094 1.719 2.541Q18 8.333 18 10q0 1.646-.625 3.104-.625 1.458-1.719 2.552t-2.541 1.719Q11.667 18 10 18Z" />
             </svg>

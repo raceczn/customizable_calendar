@@ -218,6 +218,7 @@ export default function renderViews(context, datepickerContext, store) {
     if (currentSidebarState === "hide") {
       // When closing sidebar (show the icon)
       dateTimeBtn.classList.remove("hide-datetime-icon");
+      dateTimeBtn.classList.remove("faded-text"); // Remove faded text class
       toggleForm.onclick = handleForm;
       sbToggleForm.onclick = null;
       sbToggleSubBtn.onclick = null;
@@ -234,6 +235,7 @@ export default function renderViews(context, datepickerContext, store) {
     } else {
       // When opening sidebar (hide the icon)
       dateTimeBtn.classList.add("hide-datetime-icon");
+      dateTimeBtn.classList.add("faded-text"); // Add faded text class
       toggleForm.onclick = null;
       sbToggleForm.onclick = handleForm;
       sbToggleSubBtn.onclick = handleToggleSubmenu;
