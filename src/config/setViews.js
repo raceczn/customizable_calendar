@@ -72,6 +72,6 @@ export default function setViews(
   }
 
   hideViews();
-  document.title = context.getMonthName();
+  document.title = "Calendar - " + context.getMonthName() + " " + context.getYear();
   initView(component);
 }
