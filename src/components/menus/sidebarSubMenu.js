@@ -15,7 +15,7 @@ const animationsSwitchBtn = document.querySelector('.smdt-toggle-checkbox');
 const notifyDisabledShortcutsIcon = document.querySelector('.keyboard-disabled-sm');
 
 export default function getSidebarSubMenu(store, context) {
-  const themeRadioOptions = ['dark', 'light', 'contrast'];
+  const themeRadioOptions = ['dark', 'light', 'contrast', 'pink'  ];
   const closemenu = 'hide-sidebar-sub-menu';
 
   function closeSubOnEscape(e) {

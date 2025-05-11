@@ -66,12 +66,14 @@ function setTheme(context, store) {
   const currentScheme = context.getColorScheme();
   const hasLightMode = appBody.classList.contains('light-mode');
   const hasContrastMode = appBody.classList.contains('contrast-mode');
+  const hasPinkMode = appBody.classList.contains('pink-mode');
   const prevDT = store.getAnimationStatus();
   // appBody.setAttribute('data-disable-transitions', true);
   if (
-    (currentScheme === 'light' && hasLightMode && !hasContrastMode) ||
-    (currentScheme === 'dark' && !hasLightMode && !hasContrastMode) ||
-    (currentScheme === 'contrast' && hasContrastMode && !hasLightMode)
+    (currentScheme === 'light' && hasLightMode && !hasContrastMode && !hasPinkMode) ||
+    (currentScheme === 'dark' && !hasLightMode && !hasContrastMode && !hasPinkMode) ||
+    (currentScheme === 'contrast' && hasContrastMode && !hasLightMode && !hasPinkMode) ||
+    (currentScheme === 'pink' && hasPinkMode && !hasLightMode && !hasContrastMode)
   ) {
     setTimeout(() => {
       appBody.setAttribute('data-disable-transitions', prevDT);
@@ -96,6 +98,10 @@ function setTheme(context, store) {
     }
     case 'contrast': {
       setUpTheme('contrast', 'dark', 'body contrast-mode');
+      break;
+    }
+    case 'pink': {
+      setUpTheme('pink', 'light', 'body pink-mode');
       break;
     }
     case 'dark': {

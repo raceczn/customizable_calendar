@@ -268,6 +268,46 @@ body[data-disable-transitions="true"] * {
     rgba(60, 64, 67, 0.2) 0px 1px 3px 1px;
 }
 
+.pink-mode {
+  --primary5: #fbd4eb;
+  --black000: rgb(237, 224, 233);
+  --black0: hsl(331, 100%, 91%);
+  --black1: #f6dbeb; /* Changed from pure white to very light pink */
+  --black2: #f2b8d3;
+  --black3: #FCD2F0;
+  --darkgrey000: #A69AA3;
+  --darkgrey0: #b7a9b3;
+  --darkgrey1: #aa9da6;
+  --darkgrey2: #a5979f;
+  --darkgrey3: #f4f1f3;
+  --darkgrey4: #f4f1f3;
+  --mediumgrey0: rgb(224, 219, 222);
+  --mediumgrey1: #e0dadc;
+  --mediumgrey2: #e0dadc;
+  --mediumgrey3: #e0dadc;
+  --taskcolor: #fbd4eb; /* Light pink background for tasks */
+  --taskcolor2: #fee8f8;
+  --white1: #433c40;
+  --white2: #433c40;
+  --white3: #433c40;
+  --white4: #433c40;
+  --offwhite1: #8b7e85;
+  --offwhite2: #433C40;
+  --bordergrey: 1px solid #e23ab2;
+  --borderdarkgrey: 1px solid #ffbdd3;
+  --primary3: #e856b3;
+  --primary4: #8c416c;
+  --primarylight1: #e52e9d;
+  --scrollerThumbBackground: #edc5d3;
+  --scrollerThumbBorder: 4px solid #fff5fb;
+  --scrollerThumbBackgroundHover: #c6bdc2;
+  --scrollerTrackBackground: #fff5fb;
+  --box-shadow5:
+    rgba(29, 24, 28, 0.14) 0px 4px 4px 0px,
+    rgba(55, 51, 54, 0.12) 0px 3px 2px 0px,
+    rgba(55, 51, 54, 0.2) 0px 2px 3px 0px;
+}
+
 
 select,
 button {

@@ -389,6 +389,10 @@ export default function renderViews(context, datepickerContext, store) {
     const settings = getClosest(e, ".settings");
     const select = getClosest(e, ".select__modal");
 
+    // Add debug logging
+    console.log("Clicked element:", e.target);
+    console.log("Settings button found:", settings);
+
     if (btnMainMenu) {
       context.toggleSidebarState();
       handleBtnMainMenu();
@@ -411,7 +415,6 @@ export default function renderViews(context, datepickerContext, store) {
     }
 
     if (dateTime) {
-      // Only allow datepicker if sidebar is closed
       if (sidebar.classList.contains("hide-sidebar")) {
         handleDatePickerBtn(e);
       }
@@ -419,7 +422,6 @@ export default function renderViews(context, datepickerContext, store) {
     }
 
     if (search) {
-      // Only allow search if sidebar is closed
       if (sidebar.classList.contains("hide-sidebar")) {
         createGoTo(context, store, datepickerContext);
       }
@@ -427,6 +429,7 @@ export default function renderViews(context, datepickerContext, store) {
     }
 
     if (settings) {
+      console.log("Settings button clicked");
       handleToggleSubmenu(e);
       return;
     }
@@ -538,9 +541,9 @@ export default function renderViews(context, datepickerContext, store) {
       // toggle between light/dark mode
       case "0": {
         const currentScheme = context.getColorScheme();
-        const schemes = ["light", "dark", "contrast"];
+        const schemes = ["light", "dark", "contrast", "pink"];
         context.setColorScheme(
-          schemes[(schemes.indexOf(currentScheme) + 1) % 3]
+          schemes[(schemes.indexOf(currentScheme) + 1) % 4]
         );
         setTheme(context, store);
         break;

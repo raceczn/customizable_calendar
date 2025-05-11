@@ -8,7 +8,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="personal calendar application">
   <meta name="keywords" content="vanilla, javascript, web application">
-<link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
+  <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
 
   <title>Calendar</title>
 </head>
@@ -28,7 +28,7 @@
         </button>
 
         <div class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="20" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M8 7V3m8 4V3m-9 8h10M5.25 6.75A2.25 2.25 0 0 1 7.5 4.5h9a2.25 2.25 0 0 1 2.25 2.25v12A2.25 2.25 0 0 1 16.5 21H7.5a2.25 2.25 0 0 1-2.25-2.25v-12Z" />
@@ -764,24 +764,28 @@
         <div class="sub-menu--item smi-theme-actions">
           <div class="sub-menu--item__title">Configure Application Theme</div>
           <div class="sub-menu--item__description">
-            light, dark, and high contrast themes.
+            light, dark, pink, and high contrast themes.
           </div>
           <div class="sub-menu--item__actions theme-actions">
+
+            <div class="theme-option theme-option-light">
+              <input class="theme-radio__input" name="themeoption" type="radio" value="light" id="themeRadioLightInput">
+              <span>Light</span>
+            </div>
             <div class="theme-option theme-option-dark">
               <input class="theme-radio__input" name="themeoption" type="radio" value="dark" id="themeRadioDarkInput"
                 checked>
               <span>Dark</span>
             </div>
-            <div class="theme-option theme-option-light">
-              <input class="theme-radio__input" name="themeoption" type="radio" value="light" id="themeRadioLightInput">
-              <span>Light</span>
+            <div class="theme-option theme-option-pink">
+              <input class="theme-radio__input" name="themeoption" type="radio" value="pink" id="themeRadioPinkInput">
+              <span>Pink</span>
             </div>
             <div class="theme-option theme-option-contrast">
               <input class="theme-radio__input" name="themeoption" type="radio" value="contrast"
                 id="themeRadioContrastInput">
               <span>High Contrast</span>
             </div>
-
           </div>
         </div>
 

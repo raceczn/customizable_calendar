@@ -138,10 +138,10 @@
 .form--body__end,
 .form--body__start {
   display: grid;
-  grid-template-columns: 48px 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 60px 2fr;
+  grid-template-rows: 2fr;
   height: 100%;
-  padding: 4px 4px 4px 0;
+  padding: 4px 4px 4px 28px;
   width: 100%;
   user-select: none;
 }

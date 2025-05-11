@@ -408,6 +408,15 @@
   color: #3c4043
 }
 
+.theme-option-pink {
+  background-color: #f9d5ec; /* soft pink background */
+  border: 2px solid #b03060; /* darker pink or magenta border */
+}
+
+.theme-option-pink span {
+  color: #b03060; /* matches border, good contrast on light pink */
+}
+
 .theme-option-contrast {
   background-color: #000;
   border: 2px solid var(--primarylight1)
