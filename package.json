@@ -33,9 +33,9 @@
   "author": "chase ottofy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chaseottofy/google-calendar-clone-vanilla/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/chaseottofy/google-calendar-clone-vanilla#readme",
+  "homepage": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "compression-webpack-plugin": "^10.0.0",
